@@ -4,8 +4,10 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Section } from "@/components/Layouts";
 import { RocketIcon } from "@radix-ui/react-icons";
-
 import { BorderBeam } from "@/components/magicui/border-beam";
+import Marquee from "@/components/magicui/marquee";
+import { MarqueeDemo } from "@/components/MarqueeDemo";
+import { LearnMore } from "@/app/learnMore/LearnMore";
 
 type HeroProps = {
   heading: {
@@ -87,11 +89,12 @@ export function Hero() {
           size={"lg"}
           className="rounded-[100px] text-md"
         >
-          <Link href="#" className="font-bold">
+          <Link href="" className="font-bold">
             Learn More
           </Link>
         </Button>
       </div>
+      <MarqueeDemo />
     </Section>
   );
 }
